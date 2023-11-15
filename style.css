@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "LG";
+  src: url(./font/LG\ Smart\ Regular.woff);
+  src: url(./font/LG\ Smart\ Bold.woff);
+  src: url(./font/LG\ Smart\ SemiBold.woff);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  justify-content: flex-end;
+  background: #073b4c;
+  margin: 30px;
+  color: rgb(28, 104, 104);
+  font-family: LG Smart Regular;
+}
+
+.global-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  background: rgb(3, 36, 44);
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-memo {
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  background: rgb(3, 36, 44);
+  padding-bottom: 70px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+}
+a {
+  color: rgb(44, 126, 48);
+}
+
+li {
+  list-style: none;
+}
+
+nav li {
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  padding: 20px 10px;
+}
+
+h1 {
+  font-family: LG Smart Bold;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 30px 50px;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 15px 15px 0;
+  cursor: pointer;
+  color: aliceblue;
+  height: 25px;
+  background: rgb(29, 71, 29);
+  border-radius: 5px;
+}
+
+h2 {
+  display: inline-block;
+  font-family: LG Smart SemiBold;
+  text-decoration: underline;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 20px 50px 0;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+.chapter img {
+  width: 50%;
+  margin: 50px;
+}
+
+ul {
+  padding-left: 150px;
+}
+.chapter li {
+  font-size: 1.5rem;
+  padding: 0 50px;
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 15px 50px;
+}
+
+table {
+  margin: 50px;
+  text-align: left;
+}
+
+#lesFonctions,
+#variables {
+  cursor: pointer;
+}
+
+.main {
+  width: 900px;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 25px;
+}
+
+.slider {
+  margin-top: 50px;
+  width: 900px;
+  height: 600px;
+
+  position: relative;
+}
+
+.cont-slides {
+  width: 100%;
+  height: 100%;
+}
+
+.cont-slides img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.commandes {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.commandes button {
+  background: none;
+  border: none;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.commandes img {
+  width: 30px;
+  position: relative;
+}
+
+.commandes button:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+
+.commandes button:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+
+.commandes button:nth-child(1) {
+  left: -4px;
+}
+
+.commandes button:nth-child(2) {
+  right: -4px;
+}
+
+.cercles {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate (-50% -50%);
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cercle {
+  width: 50px;
+  height: 50%;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.active-cercle {
+  background: rgb(28, 104, 104);
+}
+
+.active {
+  opacity: 1 !important;
+}
+#article {
+  /* margin: 150px 0 30px; */
+}
