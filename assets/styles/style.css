@@ -71,19 +71,6 @@ body .global-main main {
   display: flex;
   flex-direction: column;
 }
-body .global-main main #memo-link {
-  width: 1px;
-  position: absolute;
-  top: 140px;
-  left: 444px;
-  background: none;
-  color: none;
-}
-body .global-main main #memo-link a {
-  color: none;
-  cursor: none;
-  text-decoration: none;
-}
 body .global-main main h1 {
   font-family: LG Smart Bold;
   font-weight: lighter;
@@ -104,9 +91,11 @@ body .global-main main p {
   background: rgb(3, 36, 44);
   padding-bottom: 70px;
 }
-.main-memo #lesFonctions,
-.main-memo #variables {
-  cursor: pointer;
+.main-memo .header {
+  display: flex;
+}
+.main-memo .header_button button {
+  opacity: 0;
 }
 .main-memo h1 {
   font-family: LG Smart Bold;

@@ -21,21 +21,21 @@ body {
             display: flex;
             flex-direction: column;
 
-            #memo-link {
+            // #memo-link {
 
-                width: 1px;
-                position: absolute;
-                top: 140px;
-                left: 444px;
-                background: none;
-                color: none;
+            //     width: 1px;
+            //     position: absolute;
+            //     top: 140px;
+            //     left: 444px;
+            //     background: none;
+            //     color: none;
 
-                a {
-                    color: none;
-                    cursor: none;
-                    text-decoration: none;
-                }
-            }
+            //     a {
+            //         color: none;
+            //         cursor: none;
+            //         text-decoration: none;
+            //     }
+            // }
 
             h1 {
                 font-family: LG Smart Bold;
@@ -61,9 +61,14 @@ body {
     background: rgb(3, 36, 44);
     padding-bottom: 70px;
 
-    #lesFonctions,
-    #variables {
-        cursor: pointer;
+
+
+    .header {
+        display: flex;
+    }
+
+    .header_button button {
+        opacity: 0;
     }
 
     h1 {

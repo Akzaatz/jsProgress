@@ -45,7 +45,7 @@ class Admin extends User {
 
 const greg = new User("Greg", `greg@mail.com`);
 const claude = new User("Claude", `claude@mail.com`);
-const vanof = new Admin("vanof", "vanof@mail.com");
+const vanof = new Admin("Admin", "admin@mail.com");
 
 console.log(vanof.info());
 
