@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    background: #073b4c;
+    margin: 30px;
+    color: rgb(28, 104, 104);
+    font-family: LG Smart Regular;
+
+    .global-main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        background: rgb(3, 36, 44);
+
+        main {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-family: LG Smart Bold;
+                font-weight: lighter;
+                letter-spacing: 2px;
+                padding: 30px 50px;
+                font-size: 3rem;
+                font-weight: 900;
+            }
+
+            p {
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+.main-memo {
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    background: rgb(3, 36, 44);
+    padding-bottom: 70px;
+
+    #lesFonctions,
+    #variables {
+        cursor: pointer;
+    }
+
+    h1 {
+        font-family: LG Smart Bold;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        padding: 30px 50px;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        display: inline-block;
+        font-family: LG Smart SemiBold;
+        text-decoration: underline;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        padding: 20px 50px 0;
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .chapter img {
+        width: 50%;
+        margin: 50px;
+    }
+
+    .chapter_code {
+        color: rgb(71, 71, 3);
+    }
+
+    ul {
+        padding-left: 150px;
+    }
+
+    .chapter li {
+        font-size: 1.5rem;
+        padding: 0 50px;
+
+
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding: 15px 50px;
+    }
+
+    table {
+        margin: 50px;
+        text-align: left;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
