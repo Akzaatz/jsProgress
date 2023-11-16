@@ -67,8 +67,22 @@ body .global-main {
   background: rgb(3, 36, 44);
 }
 body .global-main main {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+body .global-main main #memo-link {
+  width: 1px;
+  position: absolute;
+  top: 140px;
+  left: 444px;
+  background: none;
+  color: none;
+}
+body .global-main main #memo-link a {
+  color: none;
+  cursor: none;
+  text-decoration: none;
 }
 body .global-main main h1 {
   font-family: LG Smart Bold;

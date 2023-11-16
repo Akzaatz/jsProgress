@@ -17,8 +17,25 @@ body {
         background: rgb(3, 36, 44);
 
         main {
+            position: relative;
             display: flex;
             flex-direction: column;
+
+            #memo-link {
+
+                width: 1px;
+                position: absolute;
+                top: 140px;
+                left: 444px;
+                background: none;
+                color: none;
+
+                a {
+                    color: none;
+                    cursor: none;
+                    text-decoration: none;
+                }
+            }
 
             h1 {
                 font-family: LG Smart Bold;
