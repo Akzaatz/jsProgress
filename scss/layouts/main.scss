@@ -1,75 +1,66 @@
-body {
+.global-main {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-end;
-    background: #073b4c;
-    margin: 30px;
-    color: rgb(28, 104, 104);
-    font-family: LG Smart Regular;
+    max-width: 1440px;
+    min-width: 980px;
+    width: 100%;
+    background: rgb(3, 36, 44);
 
-    .global-main {
-        align-items: center;
+    @media screen and (max-width:1140px) {}
+
+
+
+    main {
+        position: relative;
         display: flex;
         flex-direction: column;
-        max-width: 1440px;
-        background: rgb(3, 36, 44);
 
-        main {
-            position: relative;
-            display: flex;
-            flex-direction: column;
+        @media screen and (max-width:1140px) {}
 
-            // #memo-link {
+        // #memo-link {
 
-            //     width: 1px;
-            //     position: absolute;
-            //     top: 140px;
-            //     left: 444px;
-            //     background: none;
-            //     color: none;
+        //     width: 1px;
+        //     position: absolute;
+        //     top: 140px;
+        //     left: 444px;
+        //     background: none;
+        //     color: none;
 
-            //     a {
-            //         color: none;
-            //         cursor: none;
-            //         text-decoration: none;
-            //     }
-            // }
+        //     a {
+        //         color: none;
+        //         cursor: none;
+        //         text-decoration: none;
+        //     }
+        // }
 
-            h1 {
-                font-family: LG Smart Bold;
-                font-weight: lighter;
-                letter-spacing: 2px;
-                padding: 30px 50px;
-                font-size: 3rem;
-                font-weight: 900;
-            }
+        h1 {
+            font-family: LG Smart Bold;
+            font-weight: lighter;
+            letter-spacing: 2px;
+            padding: 30px 50px;
+            font-size: 3rem;
+            font-weight: 900;
+        }
 
-            p {
-                margin-left: 50px;
-            }
+        p {
+            margin-left: 50px;
         }
     }
 }
+
 
 .main-memo {
     align-items: left;
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    min-width: 840px;
+    width: 100%;
     background: rgb(3, 36, 44);
     padding-bottom: 70px;
 
 
-
-    .header {
-        display: flex;
-    }
-
-    .header_button button {
-        opacity: 0;
-    }
 
     h1 {
         font-family: LG Smart Bold;

@@ -14,6 +14,27 @@
     src: url(../../assets/font/LG\ Smart\ SemiBold.woff);
 }
 
+$init1: #073B4C;
+$init2: #07184C;
+$init3: #18074C;
+$init4: #3B074C;
+$init5: #4C073B;
+$init6: #4C0718;
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    background: #073b4c;
+    margin: 30px;
+    color: rgb(28, 104, 104);
+    font-family: LG Smart Regular;
+}
+
+
 li {
     list-style: none;
 }

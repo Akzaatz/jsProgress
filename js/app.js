@@ -1,4 +1,6 @@
-const task = ["ranger l'atelier", "plant seeds", "watch new moovies"];
+"use strict";
+
+const task = ["do new project", "keep copding", "watch new moovies"];
 
 for (let i = 0; i < task.length; i++) {
   // console.log(task[i]);
@@ -19,7 +21,7 @@ const tab = [11, 44, 38, 77, 24];
 const a = tab[1];
 const b = tab[3];
 
-console.log(a);
+// console.log(a);
 
 // ====== Class - Constructor & Héritage
 
@@ -39,15 +41,15 @@ class Admin extends User {
     this.status = "Admin";
   }
   info() {
-    return `${super.info()}\nStatus: ${this.emaistatus}`;
+    return `${super.info()}\nStatus: ${this.status}`;
   }
 }
 
 const greg = new User("Greg", `greg@mail.com`);
 const claude = new User("Claude", `claude@mail.com`);
-const vanof = new Admin("Admin", "admin@mail.com");
+const ronan = new Admin("Ronan", "admin@mail.com");
 
-console.log(vanof.info());
+console.log(ronan.info());
 
 //================SLIDER===========================================
 const imgs = document.querySelectorAll(".cont-slides img");

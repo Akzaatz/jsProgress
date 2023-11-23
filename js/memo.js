@@ -1,43 +1,49 @@
-const bodyKlik = document.getElementsByTagName("body")[0];
-const h1 = document.getElementsByTagName("h1"[0]);
-const headTag = document.getElementsByClassName("header")[0];
+"use strict";
+const body = document.body;
+const mainMemo = document.getElementsByClassName(".main-memo");
+console.log("mainMemo");
+const skin = document.getElementById("skin");
+const gaz = document.getElementById("gaz");
+const input = document.getElementById("newTitle");
 
-const visible = document.getElementById("visible");
-const button = document.createElement("button");
-const skinPlayer = document.getElementsByTagName("body")[1];
-// console.log(headTag);
+let submit = document.getElementById("submit");
 
-const functionLink = document.getElementById("lesFonctions");
-
-let index = 0;
-
-button.href = "index.html";
-button.textContent = "gameZone";
-
-bodyKlik.addEventListener("click", () => {
-  headTag.insertBefore(button, h1.firstElementChild);
+submit.addEventListener("click", () => {
+  console.log("validé");
 });
 
-button.addEventListener("click", () => {
+skin.addEventListener("click", () => {
+  body.style.backgroundColor = "blue";
+  // visible.style.opacity = 1;
+});
+
+gaz.addEventListener("click", () => {
   window.location.href = "../index.html";
 });
 
-functionLink.addEventListener("click", () => {
-  window.location.href = "fonctions.html";
+let form = document.querySelector("form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  let baliseTitle = document.getElementById("newtitle");
+  let newTitle = baliseTitle.value;
+
+  let baliseText = document.getElementById("newtext");
+  let newText = baliseText.value;
+
+  console.log(newTitle, newText);
+  const chaptersNew = document.querySelector(".new-chapters");
+  const chapter = document.createElement("div");
+  const h2 = document.createElement("h2");
+  const p = document.createElement("p");
+  chapter.classList.add("chapter");
+
+  h2.textContent = newTitle;
+  p.textContent = newText;
+
+  chapter.appendChild(h2);
+  chapter.appendChild(p);
+
+  chaptersNew.appendChild(chapter);
 });
-
-bodyKlik.addEventListener("click", () => {
-  visible.style.opacity = "1";
-});
-
-visible.addEventListener("click", nextSkin);
-
-function nextSkin() {
-  if (index < 3) {
-    document.body.style.backgroundColor = "#073b4c";
-    index++;
-    document.body.style.backgroundColor = "ffd166";
-    index = 0;
-    document.body.style.backgroundColor = "#83d483";
-  }
-}
