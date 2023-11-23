@@ -4,6 +4,8 @@ const mainMemo = document.getElementsByClassName(".main-memo");
 console.log("mainMemo");
 const skin = document.getElementById("skin");
 const gaz = document.getElementById("gaz");
+const dbz = document.getElementById("dbz");
+
 const input = document.getElementById("newTitle");
 
 let submit = document.getElementById("submit");
@@ -12,13 +14,40 @@ submit.addEventListener("click", () => {
   console.log("validé");
 });
 
-skin.addEventListener("click", () => {
-  body.style.backgroundColor = "blue";
-  // visible.style.opacity = 1;
-});
+// skin.addEventListener("click", () => {
+//   const color = (body.style.backgroundColor = "");
+//   switch (color) {
+//     case "red":
+//       document.getElementById("color").style.backgroundColor = "#073B4C";
+//       break;
+//     case "orange":
+//       document.getElementById("color").style.backgroundColor = "orange";
+//       break;
+//     case "yellow":
+//       document.getElementById("color").style.backgroundColor = "yellow";
+//       break;
+//     case "green":
+//       document.getElementById("color").style.backgroundColor = "green";
+//       break;
+//     case "blue":
+//       document.getElementById("color").style.backgroundColor = "blue";
+//       break;
+//     case "indigo":
+//       document.getElementById("color").style.backgroundColor = "indigo";
+//       break;
+//     case "violet":
+//       document.getElementById("color").style.backgroundColor = "violet";
+//       break;
+//   }
+//   console.log("color");
+// });
 
 gaz.addEventListener("click", () => {
   window.location.href = "../index.html";
+});
+
+dbz.addEventListener("click", () => {
+  window.location.href = "dbzone.html";
 });
 
 let form = document.querySelector("form");

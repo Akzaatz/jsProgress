@@ -124,3 +124,4 @@ cercles.forEach((cercle) => {
     imgs[index].classList.add("active");
   });
 });
+//====================Fin SLider======================================

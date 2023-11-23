@@ -11,22 +11,23 @@
 
   <body>
     <header_memo>
-       
       <div class="dashboard">
         <div>
-            <h1>homeJavaScriptCheatSheet</h1>
+          <h1>homeJavaScriptCheatSheet</h1>
         </div>
-      
-        <div class="visible">
+
+        <div class="gaz">
           <button id="gaz">gameZone</button>
         </div>
 
-        <div class="visible">
+        <div class="skin">
           <button id="skin">skinPlayer</button>
+        </div>
+        <div class="dbz">
+          <button id="dbz">dbZone</button>
         </div>
       </div>
 
- 
       <div>
         <form>
           <label for="newtitle">New title</label><br />
@@ -42,12 +43,14 @@
           <button type="submit" id="submit">Submit</button>
         </form>
       </div>
-    
     </header_memo>
 
     <div class="main-memo">
-       <h2 id="variables">Variables</h2>
-        <p id="test">Une variable est un identifiant qui va être lié à une valeur</p>
+      <!-- <div class="chapter">
+            <h2 id="variables">Variables</h2>
+            <p id="test">Une variable est un identifiant qui va être lié à une valeur</p>
+        </div>
+
 
         <div class="chapter">
             <h2>Boléens</h2>
@@ -62,213 +65,204 @@
         <div class="chapter">
             <h2>Opérateurs de comparaison</h2>
 
-
-
             <table cellpadding="10" class="chapter_code">
                 <tbody>
-                                     
-                                        
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;=</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>égal (afffectation type variable)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;></td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>Supérieur</td>
-                                        </tr>
 
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;>=</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>Supérieur ou égale</td>
-                                        </tr>
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;!=</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>Différent</td>
-                                        </tr>
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;=</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>égal (afffectation type variable)</td>
+                    </tr>
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;></td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>Supérieur</td>
+                    </tr>
 
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;==</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>comparaison (true/false)</td>
-                                        </tr>
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;>=</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>Supérieur ou égale</td>
+                    </tr>
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;!=</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>Différent</td>
+                    </tr>
 
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;=== </td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>Equivalence type et valeur</td>
-                                        </tr>
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;==</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>comparaison (true/false)</td>
+                    </tr>
 
-                                        <tr>
-                                            <td>expr1</td>
-                                            <td colspan="2">&nbsp;&nbsp;!== </td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td colspan="2">expr2</td>
-                                            <td>&nbsp; &nbsp;</td>
-                                            <td>Différence type et valeur</td>
-                                        </tr>
-                                       
-                                
-                                    </tbody>
-                                    </table>
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;=== </td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>Equivalence type et valeur</td>
+                    </tr>
+
+                    <tr>
+                        <td>expr1</td>
+                        <td colspan="2">&nbsp;&nbsp;!== </td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td colspan="2">expr2</td>
+                        <td>&nbsp; &nbsp;</td>
+                        <td>Différence type et valeur</td>
+                    </tr>
 
 
+                </tbody>
+            </table> -->
 
-             <!-- ============LES FONCTIONS============== -->
-        <div class="chapter">
-            <h2 id="lesFonctions">Fonctions</h2>
+      <!-- ============LES FONCTIONS============== -->
+      <!-- <div class="chapter">
+                <h2 id="lesFonctions">Fonctions</h2>
 
+                <div>
 
-            <div>
-
-                <p>
-                    Contient un bloc d’instructions auxquelles on va fixer des
-                    paramètres et à pour intérêt d’être passé en paramètre à des fonctions
-                    d’ordre supérieur
-                </p>
-                <p class="chapter_code">
-                    function hello( ) {<br />
-                    Console.log (‘Salut’) <br />
-                    }
-                </p>
-                <p>hello( ) = appel de la fonction</p>
-            </div>
-            <div class="chapter">
-                <h2>Tableaux</h2>
-                <p>
-                    Se place entre 2 [ ] <br />le premier indice est la valeur 0
-                    <br />
-                    Une propriété est une variable qui appartient à un objet. (permet de
-                    récupérer des valeurs) <br />
-                    Une méthode est une fonction qui appartient à un objet en particulier
-                    (fonctionnalité qui permet de faire une action)
-
-                <ul class="chapter_code">
-
-                    <li>unshift:&nbsp;&nbsp;&nbsp;ajoute un
-                        élément en début de tableau</li>
-                    <li>push :&nbsp;&nbsp;&nbsp;ajoute un élément en fin de tableau</li>
-                    <li>shift :&nbsp;&nbsp;&nbsp;supprime un élément en début de tableau </li>
-                    <li> pop :&nbsp;&nbsp;&nbsp;supprime un élément
-                        en fin de tableau</li>
-                </ul>
-
-                </p>
-
-            </div>
-
- 
-            <div class="chapter">
-                <h2>Opérateur Typeof</h1>
                     <p>
-                        Opérateur unaire : n’a besoin que d’une seule
-                        expression pour fonctionner <br> Permet de récupérer le type de la valeur
-                        qu’on lui passe en paramètre. </p>
-                    <p class="chapter_code">console.log(typeof VALEUR OU IDENTIFIANT)</p>
-            </div>
+                        Contient un bloc d’instructions auxquelles on va fixer des
+                        paramètres et à pour intérêt d’être passé en paramètre à des fonctions
+                        d’ordre supérieur
+                    </p>
+                    <p class="chapter_code">
+                        function hello( ) {<br />
+                        Console.log (‘Salut’) <br />
+                        }
+                    </p>
+                    <p>hello( ) = appel de la fonction</p>
+                </div>
+                <div class="chapter">
+                    <h2>Tableaux</h2>
+                    <p>
+                        Se place entre 2 [ ] <br />le premier indice est la valeur 0
+                        <br />
+                        Une propriété est une variable qui appartient à un objet. (permet de
+                        récupérer des valeurs) <br />
+                        Une méthode est une fonction qui appartient à un objet en particulier
+                        (fonctionnalité qui permet de faire une action)
+
+                    <ul class="chapter_code">
+
+                        <li>unshift:&nbsp;&nbsp;&nbsp;ajoute un
+                            élément en début de tableau</li>
+                        <li>push :&nbsp;&nbsp;&nbsp;ajoute un élément en fin de tableau</li>
+                        <li>shift :&nbsp;&nbsp;&nbsp;supprime un élément en début de tableau </li>
+                        <li> pop :&nbsp;&nbsp;&nbsp;supprime un élément
+                            en fin de tableau</li>
+                    </ul>
+
+                    </p>
+
+                </div>
 
 
-            <!-- =========LE DOM====================  -->
+                <div class="chapter">
+                    <h2>Opérateur Typeof</h1>
+                        <p>
+                            Opérateur unaire : n’a besoin que d’une seule
+                            expression pour fonctionner <br> Permet de récupérer le type de la valeur
+                            qu’on lui passe en paramètre. </p>
+                        <p class="chapter_code">console.log(typeof VALEUR OU IDENTIFIANT)</p>
+                </div> -->
+      <!-- =========LE DOM====================  -->
+      <!-- 
+                <div class="chapter">
+                    <h2>DOM (Document Object Model)</h2>
+                    <p>
+                        Fait le lien entre html et JS. <br />
+                        L’arbre du DOM représente les différents éléments présents sur le doc
+                        HTML
+                    </p>
+                    <p>
+                        DOM / Parents /Enfants <br />
+                        Les éléments présents dans le DOM sont des Noeuds
+                    </p>
 
-      <div class="chapter">
-        <h2>DOM (Document Object Model)</h2>
-        <p>
-          Fait le lien entre html et JS. <br />
-          L’arbre du DOM représente les différents éléments présents sur le doc
-          HTML
-        </p>
-        <p>
-          DOM / Parents /Enfants <br />
-          Les éléments présents dans le DOM sont des Noeuds
-        </p>
+                    <img src="../img/Capture d’écran (407).png" alt="" />
 
-        <img src="../img/Capture d’écran (407).png" alt="" />
+                    <img src="../img/dom.jpg" alt="" />
 
-        <img src="../img/dom.jpg" alt="" />
+                    <h2>Sélections Parent/Enfants ou voisins :</h2>
 
-        <h2>Sélections Parent/Enfants ou voisins :</h2>
+                    <table cellpadding="10" class="chapter_code">
+                        <tbody>
+                            <tr>
+                                <td>const article</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>article.children</td>
+                            </tr>
+                            <tr>
+                                <td>const p</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>article.children</td>
+                                <td>p.style.background = ‘red’</td>
+                            </tr>
+                            <tr>
+                                <td>const h1</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>article.firstElementChild</td>
+                            </tr>
 
-        <table cellpadding="10" class="chapter_code">
-          <tbody>
-            <tr>
-              <td>const article</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>article.children</td>
-            </tr>
-            <tr>
-              <td>const p</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>article.children</td>
-              <td>p.style.background = ‘red’</td>
-            </tr>
-            <tr>
-              <td>const h1</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>article.firstElementChild</td>
-            </tr>
+                            <tr>
+                                <td>const a</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>article.lastElementChild</td>
+                            </tr>
+                            <tr>
+                                <td>const p</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>article.children[1]</td>
+                            </tr>
+                            <tr>
+                                <td>const h1</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>p.previousElementSibling</td>
+                            </tr>
+                            <tr>
+                                <td>const h1</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>p.nextElementSibling</td>
+                            </tr>
+                            <tr>
+                                <td>const h1Parent</td>
+                                <td colspan="2">&nbsp&nbsp=</td>
+                                <td>&nbsp; &nbsp;</td>
+                                <td>h1.parentNode</td>
+                                <td>h1Parent.style.background = 'red’</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->
+      <!-- ==========LES OBJETS LITTERAUX=================  -->
 
-            <tr>
-              <td>const a</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>article.lastElementChild</td>
-            </tr>
-            <tr>
-              <td>const p</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>article.children[1]</td>
-            </tr>
-            <tr>
-              <td>const h1</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>p.previousElementSibling</td>
-            </tr>
-            <tr>
-              <td>const h1</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>p.nextElementSibling</td>
-            </tr>
-            <tr>
-              <td>const h1Parent</td>
-              <td colspan="2">&nbsp&nbsp=</td>
-              <td>&nbsp; &nbsp;</td>
-              <td>h1.parentNode</td>
-              <td>h1Parent.style.background = 'red’</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-       <!-- ==========LES OBJETS LITTERAUX=================  -->
-
-      <div class="chapter">
+      <!-- <div class="chapter">
         <h2>Objets littéraux</h2>
         <p>Un littéral d'objet est une constantes possédant des propriétés.</p>
         <p>
@@ -295,8 +289,8 @@
           OU<br />
           objet.méthode(valeur)
         </p>
-      </div>
-       
+      </div> -->
+
       <div class="chapter">
         <h2>Notation Class & constructeur</h2>
         <p>
@@ -313,6 +307,6 @@
 
       <div class="new-chapters"></div>
     </div>
+    <footer></footer>
   </body>
 </html>
-
