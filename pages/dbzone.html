@@ -9,7 +9,7 @@
     <script defer src="../js/dbz.js"></script>
   </head>
   <body>
-    <header_memo>
+    <div class="header_dbzone">
       <div class="dashboard">
         <div>
           <h1>homeJavaScriptCheatSheet</h1>
@@ -22,18 +22,24 @@
         <div class="visible">
           <button id="memo">Memo</button>
         </div>
-      </div>
-
-      <div>
         <div>
           <button>Items</button>
         </div>
       </div>
-    </header_memo>
+      <div>
+        <form>
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" />
 
-    <div class="main_dbzone">
-      <p>test</p>
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" />
+          <button>Send</button>
+        </form>
+      </div>
+      <div></div>
     </div>
+
+    <div class="main_dbzone"></div>
     <footer></footer>
   </body>
 </html>

@@ -20,7 +20,8 @@
 }
 
 
-header_memo {
+.header_memo,
+.header_dbzone {
 
     background: rgb(159, 221, 162);
     display: flex;
@@ -51,7 +52,7 @@ header_memo {
     form {
         margin: 30px;
 
-        input[type="text"] {
+        input {
             background: rgb(44, 126, 48);
             opacity: 30%;
             border-radius: 5px;
@@ -66,10 +67,21 @@ header_memo {
 
         }
 
-        input[type="text"]:focus {
+        input:focus {
             background: transparent;
             border: 3px solid #07184C
         }
     }
 
+}
+
+.header_dbzone {
+
+    background: rgb(159, 221, 162);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    min-width: 840px;
+    width: 100%;
 }
